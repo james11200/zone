@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ZONE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="http://www.bootply.com/cpHugxg2f8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+      integrity="sha512-dHaTF9X1GZUByl/lhQ8rU6/wu/JQ2fBE7wWk1ymhSq7Er9X/qYz62BnWBRB8Cv7hJjTzTTHyK0x61E+OAv/YQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jQuery
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
+      integrity="sha512-jv5VrxX9YbYZpZ7Kj8LdLeVklU0avwx3GVwTwg/i8dUioh0XH+MfisGZfW8gU5MW6ezzjwocjHbEnD4lI4f/Gw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      .navbar {
+        justify-content: flex-end; /* align navbar to the right */
+      }
+      
+      .navbar-toggler {
+        margin-left: auto; /* move toggler to the right */
+      }
+      a {
+        color: white;
+        text-decoration: white;
+        list-style: none;
+        font-size: 2vw;
+
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 5vw;
+      }
+      body {
+        background-color: #f9f9f9;
+        font-size: 1vw;
+
+      }
+      p {
+        font-size: 3vw;
+        
+      }
+      /* img{
+        max-width:100%; 
+        height:auto;
+      } */
+      .section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #welcome {
+        background-color: #fff;
+        color: #000;
+      }
+      #about {
+        background-color: #000;
+        color: #fff;
+      }
+      #cloth {
+        background-color: #fff;
+        color: #000;
+      }      
+      #pants {
+        background-color: #fff;
+        color: #000;
+      }
+      #merchandise {
+        background-color: #fff;
+        color: #000;
+
+      }
+      .template-line {
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .template-line span:first-of-type {
+        font-style: italic;
+        font-weight: normal;
+      }
+
+      .template-line span:nth-of-type(2) {
+        font-style: normal;
+        font-weight: bold;
+      }
+
+      .template-line span:nth-of-type(3) {
+        font-style: italic;
+        font-weight: normal;
+      }
+
+      .template-line span:last-of-type {
+        font-style: normal;
+        font-weight: normal;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  
+  <body class="bg-dark" style="font-size: 1vw;">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <!-- Top bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="background-color: #000 ">
+      <div class="container-fluid">
+        <img src="./images/ZONE/黑底 logo.png" style="max-height: 60px;  max-width: 100%;overflow: hidden; ">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#welcome">ZONE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cloth">上衣</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#pants">褲子</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#merchandise">周邊</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Welcome section -->
+    <section id="welcome" class="section text-white" >
+        <div class="col text-center">
+                  <img
+                  src="./images/ZONE/圓圈白底 logo.png" 
+                  style="width: 100%; height: auto"              
+                  >
+        </div>
+
+
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">     
+      <div class="container" >
+        <h1 class="text-center">About us</h1>
+        <div class="col" style="padding-left: 35%">
+          <p>
+            Hit🔥<br>
+            最強高端份子<br>
+            你（妳）最後服裝空間🩸<br>
+            潮流服飾.飾品🔥<br>
+            需備貨約14-20個工作天<br>
+            請耐心等待🙇‍♂️🙇‍♀️<br>
+        </div>   
+        <div class="col" style="padding-left: 25%">
+
+                  <a href="https://www.facebook.com" >
+                    <button class="btn btn-link" >
+                    <img
+                    src="icon/facebook.png" alt="fb"
+                    style="width: 50px; height: 50px"              >
+                  </button>
+                  </a>
+
+                  <a href="https://shopee.tw/young3388?tab=shop" >
+                    <button  class="btn btn-link" >
+                    <img src="icon/icons8-shopee-48.png" alt="Shopee">
+                    </button>
+                  </a>
+
+                  <a href="https://www.instagram.com/zone_myvibe?igsh=MzZpN28wbW9ncWt0">
+                      <button class="btn btn-link" >
+                        <img
+                        src="icon/instagram.png" 
+                        style="width: 50px; height: 50px"              
+                        href="https://www.instagram.com/ccmelodyacg"
+                        >
+                    </button>
+                  </a>
+                </div>   
+      </div>
+    </section>
+
+    <!-- Cloth section -->
+    <section id="cloth" class="section">
+      <div class="container" style="margin: auto;  ">
+        <h1 class="text-center"> 上衣</h1>
+        <!-- <h1 class="text-center" style="font-family: Brush Script MT, Brush Script Std, cursive">上衣</h1> -->
+          <div class="col text-center">
+            <img class="text-center" src="./images/white_cloth.jpg" style="max-width:50%; height:auto;margin: auto; ">          
+            <p> </p>            
+            <img class="text-center" src="./images/cloths-1024x1024.jpg" style="max-width:50%; height:auto;margin: auto; ">          
+          </div>
+        </div>
+    </section>
+
+    <!-- pants section -->
+    <section id="pants" class="section" >
+      <link rel="stylesheet" href="./style.css">
+
+      <div class="container" >
+        <h1 class="text-center">褲子</h1>
+            <div class="row">
+              <!-- Column 1 -->
+              <div class="col-md-4 custom-column">
+              <img src="./images/white_cloth.jpg"  style="max-width:100%; height:100%;" >
+              </div>
+              <!-- Column 2 -->
+              <div class="col-md-4 custom-column">
+                <img src="./images/cloths-1024x1024.jpg"  style="max-width:100%; height:100%;" >
+              </div>
+              <!-- Column 3 -->
+              <div class="col-md-4 custom-column">
+                <img src="./images/2cloths.jpg"  style="max-width:100%; height:100%;" >
+              </div>
+      </div>      
+      <script src="./script.js"></script>
+
+    </section>
+
+    <!-- merchandise section -->
+    <section id="merchandise" class="section">     
+      <div class="col text-center">
+        <h1 class="text-center">周邊</h1>
+
+        <img class="text-center" src="./images/necklace.png" style="max-width:50%; height:auto;margin: auto;">
+        <img class="text-center" src="./images/all-inclusive.png" style="max-width:50%; height:auto;margin: auto;">
+        <img class="text-center" src="./images/man.png" style="max-width:50%; height:auto;margin: auto;">
+      </div>
+    </section>
+    
+      <div class="container mg-dark text-white" >
+        <p></p>
+        <p style="font-size: 2vw;"> Address: No. 75-1, Ln. 187, Sec. 1, Dunhua S. Rd., Da’an Dist., Taipei City <br/>
+          MON-FRI:15:00-22:00<br/>
+          SAT-SUN:14:00-22:00
+        </p>
+
+      </div>
+
+      
+      <script>
+        $(function() {
+          // close toggle menu on click
+          $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+          });
+        });
+      </script>
+      <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                $('.navbar-collapse').collapse('hide');
+              });
+            } // End if
+          });
+        });
+        </script>
+        
+
+    </section>
+    
+  </body>
+</html>
